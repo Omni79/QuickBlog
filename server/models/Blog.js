@@ -10,6 +10,6 @@ const blogSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 // ✅ Prevent OverwriteModelError by checking if already defined
-const Blog = mongoose.models.blog || mongoose.model('blog', blogSchema);
+const Blog = mongoose.models.Blog || mongoose.model('Blog', blogSchema);
 
 export default Blog;
